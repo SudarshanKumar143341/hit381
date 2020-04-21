@@ -12,13 +12,33 @@
 	</head>
 
 <body>
+  <div class="outer-box">
+  <div class="heading-sign-in">
   <div class="heading">
     <h1>Digital Cook Book</h1>
     <p>Connecting through recipes......</p>
   </div>
   <div class="sign-in">
-    <button type="button" onclick="#">Sign-Up with Google </button>
-    <button type="button" onclick="#">Sign-Up with Facebook </button>
-    <button type="button" onclick="#">Sign-Up with E-mail </button>
+    <form  id="registration" method="post" action="/nowhere.php" autocomplete="on" name="RegistrationForm" target="_self" >
+     <label>Email/Username: </label><br>
+     <input id="username" type="text" name="username" placeholder="yyyy@zzzz.com *" data-error="You must enter Name."  required autofocus>
+     <br>
+     <label>Password: </label><br>
+     <input id="psw" type="text" name="password" placeholder="***********">
+     <br><br>
+     <input id="signin" type="Submit" value="Sign In"><br>
+     <div class="forgot-password">
+       <a class="reset-password" href="/reset/password">Forgot Password? </a>
+      </div>
+     <h2>OR</h2>
+     <button class="Google-Sign-In" type="button">Login With Google</button>
+     <button class="Facecbook-Sign-In" type="button">Login With Facebook </button><br>
+     </form>
+  </div>
+  </div>
+  <div class="sign-up">
+    <p>Don't have an account? <a href="signup">Create an Account</a></p>
+  </div>
+  </div>
 </body>
 </html>
