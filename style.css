@@ -69,6 +69,23 @@ h1,h2,p{
 #signin{
   align-self: center;
 }
+
+.cards-group{
+  display: block;
+  margin-top: 70px;
+}
+
+.cards-row{
+  display:flex;
+}
+.card {
+    border: 1px solid black;
+    margin: 5px;
+    width: -webkit-fill-available;
+    height:80px;
+    background: #20B2AA;
+    padding-top: 30px;
+  }
 @media screen and (min-width:600px){
   .outer-box{
     border: 1px solid grey;
